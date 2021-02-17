@@ -36,8 +36,8 @@
         meteorites = loadTable('Meteorite_Landings.csv', 'csv', 'header');
 
         // Only redraw the meteorites when the map change and not every frame.
-        //myMap.onChange(drawMeteorites);
-        drawMeteorites;
+        myMap.onChange(drawMeteorites);
+        
 
         fill(200, 200, 0); 
         stroke(50);
